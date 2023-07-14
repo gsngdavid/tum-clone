@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .container {
+        @apply max-w-[1350px]
+    }
+    .x-space {
+        @apply mx-auto px-4
+    }
+
+    .title {
+        @apply text-blue-dark text-3xl font-semibold
+    }
+
+    .btn-primary {
+        @apply text-white bg-blue-primary hover:bg-blue-hover
+    }
+
+    .btn-offer {
+        @apply py-1 px-4 bg-gray-light whitespace-nowrap cursor-pointer hover:text-white hover:bg-blue-primary
+    }
+}
